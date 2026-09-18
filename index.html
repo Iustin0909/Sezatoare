@@ -19,11 +19,87 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header" id="top"></header>
+    <header class="site-header" id="top">
+      <nav class="topbar" aria-label="Navigare principală">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <span>Sezatoare</span>
+        </div>
+        <div class="nav">
+          <a href="#despre">Despre</a>
+          <a href="#tradicie">Tradiție</a>
+          <a href="#evenimente">Evenimente</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a class="cta" href="#evenimente">Descoperă tradiția</a>
+      </nav>
+
+      <div class="hero" id="despre">
+        <div class="hero-copy">
+          <p class="eyebrow">Râmnicu Vâlcea</p>
+          <h1>Tradiția românească, vie și caldă.</h1>
+          <p>
+            Împreună păstrăm obiceiurile, portul popular și spiritul
+            comunității, transformând fiecare detaliu într-o poveste autentică,
+            plină de căldură, respect și identitate.
+          </p>
+          <div class="hero-actions">
+            <a class="cta" href="#evenimente">Vezi evenimentele</a>
+            <a class="cta secondary" href="#tradicie">Află mai multe</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Ilustrație tradițională">
+          <div class="panel">
+            <div class="panel-inner">
+              <span class="badge">Port popular</span>
+              <div class="ornament" aria-hidden="true">
+                <div class="symbol">✦</div>
+              </div>
+              <div class="card-meta">
+                <h2>Viață tradițională</h2>
+                <p>
+                  Frumusețe, meșteșug și obiceiuri moștenite din generații în
+                  generații.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="info-grid" id="tradicie">
+      <article class="info-card">
+        <div class="icon" aria-hidden="true">✧</div>
+        <h3>Obiceiuri</h3>
+        <p>
+          Fiecare tradiție are un rost și o amprentă specifică, adânc
+          înrădăcinată în comunitatea noastră.
+        </p>
+      </article>
+
+      <article class="info-card" id="evenimente">
+        <div class="icon" aria-hidden="true">❀</div>
+        <h3>Evenimente</h3>
+        <p>
+          Întâlniri, festivaluri și manifestări care păstrează vie flacăra
+          culturală a locului.
+        </p>
+      </article>
+
+      <article class="info-card" id="contact">
+        <div class="icon" aria-hidden="true">✦</div>
+        <h3>Comunitate</h3>
+        <p>
+          Un spațiu unde tradiția devine parte din prezent, oferind încredere,
+          bucurie și identitate.
+        </p>
+      </article>
+    </main>
   </body>
 </html>
