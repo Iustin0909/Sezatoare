@@ -5,103 +5,657 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Sezatoare Ramnicu Valcea este o comunitate de oameni care doresc sa duca mai departe traditia romaneasca prin promovarea iei si a portului popular romanesc."
+      content="Șezătoare Râmnicu Vâlcea - Comunitate dedicată păstrării și transmiterii meșteșugului cusutului iei, descifrării motivelor tradiționale și reînvierii șezătorilor autentice românești."
     />
     <meta
       name="keywords"
-      content="sezatoare, ramnicu valcea, traditie, ia, port popular romanesc"
+      content="sezatoare, ramnicu valcea, ie romaneasca, camasa cu altita, motive traditionale, port popular, cusaturi manuale, patrimoniu unesco"
     />
-    <meta name="author" content="Sezatoare Ramnicu Valcea" />
-    <title>Sezatoare Ramnicu Valcea</title>
+    <meta name="author" content="Șezătoare Râmnicu Vâlcea" />
+    <title>Șezătoare Râmnicu Vâlcea | Meșteșug, Povești și Tradiție Vie</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Bandă decorativă tradițională de sus -->
+    <div class="traditional-border-top" aria-hidden="true"></div>
+
+    <!-- Antet și Meniu Principal -->
     <header class="site-header" id="top">
       <nav class="topbar" aria-label="Navigare principală">
-        <div class="brand">
-          <a href="index.html"
-            ><span class="brand-mark"><img src="" alt="" /></span
-          ></a>
-          <span>Sezatoare</span>
-        </div>
-        <div class="nav">
-          <a href="#despre">Despre</a>
-          <a href="#tradicie">Tradiție</a>
-          <a href="#evenimente">Evenimente</a>
+        <a href="#top" class="brand" aria-label="Șezătoare Râmnicu Vâlcea Acasă">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span class="brand-text">
+            <strong>Șezătoare</strong>
+            <small>Râmnicu Vâlcea</small>
+          </span>
+        </a>
+
+        <div class="nav" id="main-nav">
+          <a href="#despre">Despre Șezătoare</a>
+          <a href="#traditie">Semne & Simboluri</a>
+          <a href="#mestesug">Ghidul Cusutului</a>
+          <a href="#evenimente">Întâlniri & Ateliere</a>
+          <a href="#comunitate">Comunitate</a>
           <a href="#contact">Contact</a>
         </div>
-        <a class="cta" href="#evenimente">Descoperă tradiția</a>
+
+        <a class="cta cta-header" href="#contact">Vino la șezătoare</a>
       </nav>
 
-      <div class="hero" id="despre">
+      <!-- Zona Hero -->
+      <section class="hero" id="despre" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Râmnicu Vâlcea</p>
-          <h1>Tradiția românească, vie și caldă.</h1>
-          <p>
-            Împreună păstrăm obiceiurile, portul popular și spiritul
-            comunității, transformând fiecare detaliu într-o poveste autentică,
-            plină de căldură, respect și identitate.
+          <p class="eyebrow">Comunitate tradițională din Râmnicu Vâlcea</p>
+          <h1 id="hero-title">Povești cusute cu acul și ața, din drag de neam.</h1>
+          <p class="hero-lead">
+            La Șezătoarea Râmnicu Vâlcea ne adunăm pentru a desluși taina semnelor
+            străvechi, a coase propria cămașă cu altiță și a redescoperi liniștea
+            lucrului făcut pe îndelete. Oricine vrea să învețe găsește un loc la
+            masa noastră.
           </p>
-          <div class="hero-actions">
-            <a class="cta" href="#evenimente">Vezi evenimentele</a>
-            <a class="cta secondary" href="#tradicie">Află mai multe</a>
-          </div>
-        </div>
 
-        <div class="hero-visual" aria-label="Ilustrație tradițională">
-          <div class="panel">
-            <div class="panel-inner">
-              <span class="badge">Port popular</span>
-              <div class="ornament" aria-hidden="true">
-                <div class="symbol">✦</div>
-              </div>
-              <div class="card-meta">
-                <h2>Viață tradițională</h2>
-                <p>
-                  Frumusețe, meșteșug și obiceiuri moștenite din generații în
-                  generații.
-                </p>
-              </div>
+          <div class="hero-actions">
+            <a class="cta" href="#evenimente">Vezi când ne întâlnim</a>
+            <a class="cta secondary" href="#traditie">Descoperă semnele cusute</a>
+          </div>
+
+          <!-- Indicatori rapizi ai comunității -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">100+</span>
+              <span class="stat-label">Cămăși & ii cusute</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">8+</span>
+              <span class="stat-label">Ani de șezători</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">Gratuit</span>
+              <span class="stat-label">Transmitere meșteșug</span>
             </div>
           </div>
         </div>
-      </div>
+
+        <!-- Panou decorativ Hero: Element tradițional stilizat fără fotografii -->
+        <aside class="hero-visual" aria-label="Carte de vizită tradițională">
+          <div class="panel">
+            <div class="panel-inner">
+              <div class="panel-header">
+                <span class="badge">Meșteșug Viu</span>
+                <span class="panel-tag">Vâlcea & Oltenia</span>
+              </div>
+
+              <div class="ornament-pattern" aria-hidden="true">
+                <div class="stitch-row">
+                  <span>✦</span><span>✧</span><span>❖</span><span>✧</span><span>✦</span>
+                </div>
+                <div class="stitch-symbol">ᛝ</div>
+                <div class="stitch-caption">Izvod Vâlcean</div>
+              </div>
+
+              <div class="card-meta">
+                <h2>Rostul Șezătorii</h2>
+                <p>
+                  „Nu coasem doar pânză și ață, ci împletim răbdarea, vorba caldă
+                  și dorul de rădăcini într-o mărturie vie a identității noastre.”
+                </p>
+                <div class="quote-author">— Membră a Șezătorii Râmnicu Vâlcea</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
     </header>
 
-    <main class="info-grid" id="tradicie">
-      <article class="info-card">
-        <div class="icon" aria-hidden="true">✧</div>
-        <h3>Obiceiuri</h3>
-        <p>
-          Fiecare tradiție are un rost și o amprentă specifică, adânc
-          înrădăcinată în comunitatea noastră.
-        </p>
-      </article>
+    <main id="continut-principal">
+      <!-- Secțiunea: Ce înseamnă o șezătoare la noi -->
+      <section class="section section-pillars" aria-labelledby="pillars-title">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-eyebrow">Rost și Valori</p>
+            <h2 id="pillars-title">Cum trăiește șezătoarea în inima Vâlcii</h2>
+            <p class="section-desc">
+              Șezătoarea nu este doar o lecție de lucru manual; este spațiul în
+              care regăsim tihnă, sprijin reciproc și legătura autentică cu tradițiile
+              moștenite de la străbuni.
+            </p>
+          </div>
 
-      <article class="info-card" id="evenimente">
-        <div class="icon" aria-hidden="true">❀</div>
-        <h3>Evenimente</h3>
-        <p>
-          Întâlniri, festivaluri și manifestări care păstrează vie flacăra
-          culturală a locului.
-        </p>
-      </article>
+          <div class="pillars-grid">
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">🪡</div>
+              <h3>Învățare pe Îndelete</h3>
+              <p>
+                Ghidăm fiecare pas: de la alegerea pânzei potrivite și număratul
+                firelor, până la tehnici migăloase de încreț, găurele și cheițe.
+              </p>
+            </article>
 
-      <article class="info-card" id="contact">
-        <div class="icon" aria-hidden="true">✦</div>
-        <h3>Comunitate</h3>
-        <p>
-          Un spațiu unde tradiția devine parte din prezent, oferind încredere,
-          bucurie și identitate.
-        </p>
-      </article>
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">📜</div>
+              <h3>Autenticitate & Izvoade</h3>
+              <p>
+                Lucrăm după izvoade vechi autentice, fotografiate din muzee sau
+                recuperate din lăzile de zestre ale satelor vâlcene, fără rabat de la calitate.
+              </p>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">🫖</div>
+              <h3>Comuniune & Tihnă</h3>
+              <p>
+                La noi se leagă prietenii de o viață. În jurul unei cești de ceai
+                sau cafea, ascultăm povești de viață, cântăm și ne descrețim frunțile.
+              </p>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">🌿</div>
+              <h3>Materiale Naturale</h3>
+              <p>
+                Prețuim pânza topită de casă, inul, cânepa, borangicul și ațele de
+                bumbac sau mătase vegetală, respectând compoziția cămășii autentice.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secțiunea: Tradiție & Dicționarul Semnelor Cusute -->
+      <section class="section section-tradition" id="traditie" aria-labelledby="tradition-title">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-eyebrow">Limbajul Sacru al Cămășii</p>
+            <h2 id="tradition-title">Semne și Simboluri Cusute pe Ie</h2>
+            <p class="section-desc">
+              Fiecare motiv cusut pe cămașa tradițională este o scriere simbolică,
+              o rugăciune de protecție și o reflectare a armoniei omului cu natura.
+            </p>
+          </div>
+
+          <div class="symbols-grid">
+            <article class="symbol-card">
+              <div class="symbol-glyph" aria-hidden="true">✦</div>
+              <h3>Steaua cu 8 Colțuri (Călăuza)</h3>
+              <p>
+                Semnul luminii, al călăuzirii pe drumurile vieții și al destinului
+                luminat. Este unul dintre cele mai răspândite motive de pe altițe.
+              </p>
+              <div class="symbol-meta">Poziție tipică: Altiță & Râuri</div>
+            </article>
+
+            <article class="symbol-card">
+              <div class="symbol-glyph" aria-hidden="true">❖</div>
+              <h3>Rombul & Glia Roditoare</h3>
+              <p>
+                Reprezintă pământul roditor, fertilitatea, stabilitatea familiei
+                și continuitatea gospodăriei. Adesea este multiplicat în șiruri compacte.
+              </p>
+              <div class="symbol-meta">Poziție tipică: Piept & Mânecă</div>
+            </article>
+
+            <article class="symbol-card">
+              <div class="symbol-glyph" aria-hidden="true">ᛝ</div>
+              <h3>Pomul Vieții (Copacul Cosmic)</h3>
+              <p>
+                Simbolizează regenerarea continuă, legătura eternă dintre cer, pământ
+                și rădăcinile neamului. Se coase adesea în ramuri simetrice.
+              </p>
+              <div class="symbol-meta">Poziție tipică: Centrul altiței</div>
+            </article>
+
+            <article class="symbol-card">
+              <div class="symbol-glyph" aria-hidden="true">≋</div>
+              <h3>Calea Ocolită (Apa Curvată)</h3>
+              <p>
+                Valurile sau meandrele reprezintă curgerea timpului, apa vieții și
+                drumul omului prin lume, depășind cu răbdare orice obstacol.
+              </p>
+              <div class="symbol-meta">Poziție tipică: Râuri pe mânecă</div>
+            </article>
+
+            <article class="symbol-card">
+              <div class="symbol-glyph" aria-hidden="true">ᛗ</div>
+              <h3>Coarnele Berbecului</h3>
+              <p>
+                Simbol străvechi pastoral, semnifică forța vitală, perseverența,
+                hărnicia și puterea de a birui greutățile vieții cotidiene.
+              </p>
+              <div class="symbol-meta">Poziție tipică: Guler & Bentițe</div>
+            </article>
+
+            <article class="symbol-card">
+              <div class="symbol-glyph" aria-hidden="true">✺</div>
+              <h3>Soarele & Roza Vânturilor</h3>
+              <p>
+                Dătătorul de viață, căldură și belșug. Aduce noroc purtătoarei și
+                veghează asupra armoniei sufletești a celei ce a cusut-o.
+              </p>
+              <div class="symbol-meta">Poziție tipică: Piept & Spate</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secțiunea: Anatomia Iei și Meșteșugul Cusutului -->
+      <section class="section section-craft" id="mestesug" aria-labelledby="craft-title">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-eyebrow">Pașii Făuririi unei Cămăși</p>
+            <h2 id="craft-title">Cum coasem o ie de la primul fir</h2>
+            <p class="section-desc">
+              O cămașă tradițională nu se cumpără de-a gata dintr-un magazin; se
+              naște treptat, cu migală și înțelegere pentru fiecare parte componentă.
+            </p>
+          </div>
+
+          <div class="craft-layout">
+            <!-- Etapele cusutului -->
+            <div class="steps-list">
+              <div class="step-card">
+                <div class="step-num">01</div>
+                <div class="step-content">
+                  <h3>Alegerea Pânzei și Croiul Drept</h3>
+                  <p>
+                    Croitul românesc este fără deșeu de material: pânza se rupe pe fir
+                    în dreptunghiuri și pătrate (stan față, stan spate, mâneci și pavele
+                    de sub braț).
+                  </p>
+                </div>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">02</div>
+                <div class="step-content">
+                  <h3>Altița și Încrețul Galben</h3>
+                  <p>
+                    Altița este compoziția orizontală de pe umăr, cea mai bogată. Sub ea se
+                    execută încrețul – o capodoperă geometrică de cute strânse, adesea
+                    brodate cu mătase galbenă sau ocru.
+                  </p>
+                </div>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">03</div>
+                <div class="step-content">
+                  <h3>Râurile de pe Piept și Mânecă</h3>
+                  <p>
+                    Râurile coboară vertical sau oblic din încreț până la manșetă. Punctele
+                    folosite includ cruciulița măruntă, punct bătrânesc, tel și găurele.
+                  </p>
+                </div>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">04</div>
+                <div class="step-content">
+                  <h3>Încheierea cu Cheițe și Tivitură</h3>
+                  <p>
+                    Bucățile de pânză se unesc cu cheițe croșetate sau lucrate cu acul,
+                    iar tivurile se termină cu găurele simple sau duble, fără mașină de cusut.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ce să aduci la prima șezătoare -->
+            <aside class="toolkit-panel" aria-labelledby="toolkit-title">
+              <div class="toolkit-box">
+                <div class="toolkit-badge">Trusa Bobocului</div>
+                <h3 id="toolkit-title">Ce să aduci cu tine la prima șezătoare</h3>
+                <ul class="toolkit-items">
+                  <li>
+                    <span class="bullet-icon">✓</span>
+                    <div>
+                      <strong>Ace cu vârf bont (mărimea 24–26):</strong>
+                      <span>Pentru a nu despica firele de urzeală și bătătură.</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="bullet-icon">✓</span>
+                    <div>
+                      <strong>Foarfecă fină de broderie:</strong>
+                      <span>Cu vârfuri ascuțite pentru tăiat fire pe fir.</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="bullet-icon">✓</span>
+                    <div>
+                      <strong>Degetar potrivit:</strong>
+                      <span>Protejează degetul la treceri prin straturi groase.</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="bullet-icon">✓</span>
+                    <div>
+                      <strong>Ață de bumbac mouline sau mătase:</strong>
+                      <span>În nuanțe tradiționale (roșu, negru, ocru, cărămiziu).</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="bullet-icon">✓</span>
+                    <div>
+                      <strong>Caiet de izvoade sau hârtie milimetrică:</strong>
+                      <span>Pentru a transcrie și calcula poziția motivelor.</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="bullet-icon">✓</span>
+                    <div>
+                      <strong>Răbdare și voie bună:</strong>
+                      <span>Cel mai important lucru pe care îl iei la șezătoare.</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="toolkit-note">
+                  <em>Nu ai toate materialele?</em> Nu-ți face griji, la primele
+                  întâlniri îți punem la dispoziție mostre de pânză și ațe de test.
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secțiunea: Calendarul Întâlnirilor și Atelierelor -->
+      <section class="section section-events" id="evenimente" aria-labelledby="events-title">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-eyebrow">Fii parte din poveste</p>
+            <h2 id="events-title">Programul Întâlnirilor Noastre</h2>
+            <p class="section-desc">
+              Ne întâlnim regulat în Râmnicu Vâlcea. Participarea este deschisă tuturor
+              celor care îndrăgesc portul tradițional, indiferent de vârstă sau nivel.
+            </p>
+          </div>
+
+          <div class="events-grid">
+            <article class="event-card">
+              <div class="event-badge-date">
+                <span class="event-day">În fiecare</span>
+                <span class="event-date">Sâmbătă</span>
+                <span class="event-time">10:00 - 13:30</span>
+              </div>
+              <div class="event-info">
+                <div class="event-tag">Întâlnire Săptămânală</div>
+                <h3>Șezătoarea de Lucru & Meșteșug</h3>
+                <p>
+                  Ne adunăm cu lucrările în curs, descifrăm împreună modele noi,
+                  schimbăm impresii și sfaturi tehnice. Fiecare lucrează în ritmul propriu.
+                </p>
+                <div class="event-location">
+                  <span class="loc-pin">📍</span> Biblioteca Județeană „Antim Ivireanul” / Sala Tradițiilor
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card highlight">
+              <div class="event-badge-date">
+                <span class="event-day">Lunar</span>
+                <span class="event-date">Joi seară</span>
+                <span class="event-time">17:30 - 20:00</span>
+              </div>
+              <div class="event-info">
+                <div class="event-tag accent">Atelier Tematic</div>
+                <h3>Atelierul de Încreț și Cheițe</h3>
+                <p>
+                  Sesiune dedicată secretelor încrețului funcțional și decorativ de sub
+                  altiță, precum și unirii bucăților de pânză cu cheițe românești făcute cu acul.
+                </p>
+                <div class="event-location">
+                  <span class="loc-pin">📍</span> Centrul Cultural Râmnicu Vâlcea
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-badge-date">
+                <span class="event-day">Sezonier</span>
+                <span class="event-date">Iunie</span>
+                <span class="event-time">Ziua Iei</span>
+              </div>
+              <div class="event-info">
+                <div class="event-tag">Expoziție Comunitară</div>
+                <h3>Ziua Universală a Iei la Vâlcea</h3>
+                <p>
+                  Sărbătorim cămașa cu altiță prin defilare în straie populare, expoziție
+                  cu iile finalizate de membrele noastre și ateliere deschise pentru public.
+                </p>
+                <div class="event-location">
+                  <span class="loc-pin">📍</span> Parcul Zăvoi & Muzeul Satului Vâlcean Bujoreni
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secțiunea: Comunitate & Povești de Viață -->
+      <section class="section section-community" id="comunitate" aria-labelledby="community-title">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-eyebrow">Vocile Comunității</p>
+            <h2 id="community-title">Ce spun cei care vin la șezătoare</h2>
+            <p class="section-desc">
+              Poveștile celor care au descoperit cum acul și pânza pot aduce
+              pace sufletească și mândria de a purta o haină cu rădăcini.
+            </p>
+          </div>
+
+          <div class="testimonials-grid">
+            <blockquote class="testimonial-card">
+              <p class="quote-text">
+                „Când am venit la prima șezătoare, nu știam nici cum se ține un ac
+                pentru pânză de in. Cu răbdarea doamnelor de aici, după opt luni
+                am îmbrăcat propria ie cusută pentru fetița mea. E o senzație de nedescris.”
+              </p>
+              <footer class="quote-author-info">
+                <strong>Maria D.</strong>
+                <span>Membră de 3 ani, Râmnicu Vâlcea</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <p class="quote-text">
+                „Pentru mine, șezătoarea este terapie pură. După o săptămână agitată
+                la birou, sâmbăta mă așez la masa de lucru, aud foșnetul ațelor și
+                poveștile calde. Acolo timpul își recapătă măsura curată.”
+              </p>
+              <footer class="quote-author-info">
+                <strong>Elena P.</strong>
+                <span>Cusătoare pasionată de motive oltenești</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <p class="quote-text">
+                „Am salvat un model de altiță dintr-o cămașă veche de peste 100 de ani
+                a străbunicii mele din Călimănești. Împreună cu fetele am reprodus-o
+                pe pânză nouă. Tradiția nu moare când o ții în mâini.”
+              </p>
+              <footer class="quote-author-info">
+                <strong>Ioana S.</strong>
+                <span>Meșter popular și coordonator atelier</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secțiunea: Contact & Înscriere -->
+      <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <p class="section-eyebrow">Vino la masa noastră</p>
+              <h2 id="contact-title">Hai să coasem împreună!</h2>
+              <p>
+                Ușa șezătorii este mereu deschisă. Fie că ești la început de drum sau ai
+                deja o cămașă începută în sertar, trimite-ne un semn și te primim cu bucurie.
+              </p>
+
+              <div class="contact-details">
+                <div class="contact-detail-item">
+                  <span class="detail-icon" aria-hidden="true">📍</span>
+                  <div>
+                    <strong>Locație:</strong>
+                    <span>Râmnicu Vâlcea, Județul Vâlcea, România</span>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <span class="detail-icon" aria-hidden="true">🗓</span>
+                  <div>
+                    <strong>Program de întâlnire:</strong>
+                    <span>În fiecare sâmbătă dimineața, între orele 10:00 și 13:30</span>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <span class="detail-icon" aria-hidden="true">✉</span>
+                  <div>
+                    <strong>Mesaje & Comunitate:</strong>
+                    <span>sezatoare.vl@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-banner">
+                <div class="banner-icon" aria-hidden="true">✦</div>
+                <p>
+                  <strong>Participarea este liberă și gratuită.</strong>
+                  Nu percepem taxe de înscriere; fiecare participant își aduce pânza, ațele și sufletul deschis.
+                </p>
+              </div>
+            </div>
+
+            <!-- Formular de înscriere -->
+            <form class="contact-form" action="#" method="post" aria-label="Formular de înscriere la șezătoare">
+              <h3>Înscrie-te la următoarea întâlnire</h3>
+              <p class="form-desc">Completează formularul și te vom contacta cu detalii despre întâlnire.</p>
+
+              <div class="form-group">
+                <label for="nume">Nume și Prenume <span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="nume"
+                  name="nume"
+                  required
+                  placeholder="ex: Ana Ionescu"
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Adresă de Email <span class="required">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="ex: ana@exemplu.ro"
+                    autocomplete="email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="telefon">Telefon</label>
+                  <input
+                    type="tel"
+                    id="telefon"
+                    name="telefon"
+                    placeholder="ex: 07xxxxxxxx"
+                    autocomplete="tel"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="experienta">Nivel de experiență în cusut</label>
+                <select id="experienta" name="experienta">
+                  <option value="incepator">Începător absolut (nu am cusut niciodată)</option>
+                  <option value="mediu">Am mai cusut cruciulițe / puncte simple</option>
+                  <option value="avansat">Am experiență / lucrez deja la o cămașă</option>
+                  <option value="curios">Vreau doar să asist și să aflu detalii</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mesaj">Mesaj sau ce proiect dorești să începi</label>
+                <textarea
+                  id="mesaj"
+                  name="mesaj"
+                  rows="4"
+                  placeholder="Spune-ne ce te atrage la șezătoare sau ce tip de ie ai vrea să coși..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="cta submit-btn">
+                Trimite înscrierea
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Subsol (Footer) -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-col brand-col">
+          <div class="brand footer-brand">
+            <span class="brand-mark" aria-hidden="true">✦</span>
+            <span>Șezătoare Râmnicu Vâlcea</span>
+          </div>
+          <p class="footer-tagline">
+            Păstrăm și ducem mai departe taina iei românești, a cămășii cu altiță
+            și a portului popular din ținutul Vâlcii.
+          </p>
+          <div class="unesco-mention">
+            <span class="unesco-icon" aria-hidden="true">🏛</span>
+            <span>Cămașa cu altiță este înscrisă în Lista Patrimoniului Imaterial UNESCO.</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigare Rapidă</h4>
+          <ul class="footer-links">
+            <li><a href="#despre">Despre Șezătoare</a></li>
+            <li><a href="#traditie">Semne & Simboluri</a></li>
+            <li><a href="#mestesug">Ghidul Cusutului</a></li>
+            <li><a href="#evenimente">Întâlniri & Ateliere</a></li>
+            <li><a href="#comunitate">Povești din Comunitate</a></li>
+            <li><a href="#contact">Înscriere & Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tradiție & Resurse</h4>
+          <ul class="footer-links">
+            <li><a href="#mestesug">Trusa Începătorului</a></li>
+            <li><a href="#traditie">Simbolistica Românească</a></li>
+            <li><a href="#evenimente">Calendarul Săptămânal</a></li>
+            <li><a href="#contact">Biblioteca Județeană Antim Ivireanul</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>© 2026 Șezătoare Râmnicu Vâlcea. Păstrăm tradiția vie cu fiecare împunsătură de ac.</p>
+          <a href="#top" class="back-to-top" aria-label="Înapoi la începutul paginii">↑ Sus</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
