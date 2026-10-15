@@ -1,81 +1,70 @@
 # Șezătoare Râmnicu Vâlcea
 
-Platformă web dedicată comunității **„Șezătoare Râmnicu Vâlcea”**, creată pentru păstrarea, învățarea și promovarea tradițiilor românești, a meșteșugului cusutului iei, a cămășii cu altiță (element inclus în Patrimoniul Imaterial UNESCO) și a portului popular din zona Vâlcii și a Olteniei de sub Munte.
+Platformă web completă dedicată comunității **„Șezătoare Râmnicu Vâlcea”**, structurată ca o arhitectură **Multi-Page (pagini dedicate)** pentru o navigare facilă, aprofundată și curată. Proiectul este dedicat păstrării, învățării și promovării meșteșugului cusutului manual al cămășii cu altiță (element inclus în Patrimoniul Imaterial UNESCO) și a portului popular din ținutul Vâlcii și al Olteniei de sub Munte.
 
 ---
 
-## 🌟 Structura Platformei
+## 🏛️ Arhitectura Paginilor Web
 
-Platforma este concepută special pentru specificul unei șezători tradiționale:
+Fiecare secțiune importantă dispune acum de propria pagină dedicată:
 
-1. **Antet & Navigație**
-   - Siglă cu motiv solar tradițional și identitate vizuală dedicată.
-   - Legături rapide către secțiunile cheie și buton direct de participare.
+1. **[Acasă (`index.html`)](file:///c:/Users/Administrator/.gemini/antigravity/scratch/Sezatoare/index.html)**
+   - Prezentare generală a șezătorii, atmosferă primitoare, cifre cheie ale comunității (peste 100 de cămăși cusute, peste 8 ani de activitate).
+   - Avanpremiere pentru pilonii comunității, semne cusute, pași de lucru și calendar.
+   - Puncte rapide de navigare către toate paginile tematice.
 
-2. **Despre Șezătoare (Hero & Rostul Nostru)**
-   - Misiunea comunității: redescoperirea lucrului de mână pe îndelete.
-   - Indicatori rapizi (anii de activitate, cămăși cusute, participare gratuită).
-   - Card simbolic cu izvod vâlcean și motto-ul meșteșugului.
+2. **[Despre Noi (`despre.html`)](file:///c:/Users/Administrator/.gemini/antigravity/scratch/Sezatoare/despre.html)**
+   - Istoria și originea grupului din Râmnicu Vâlcea.
+   - Pilonii și valorile noastre: lucrul pe îndelete, terapia prin cusut, respectul pentru izvodul autentic și transmiterea gratuită.
+   - Mărturii de viață așternute de membrele comunității.
 
-3. **Pilonii Comunității**
-   - *Învățare pe îndelete* (de la firul de pânză până la cusături complexe).
-   - *Autenticitate & Izvoade* (modele din lăzi de zestre și muzee etnografice).
-   - *Comuniune & Tihnă* (ceai cald, povești, sprijin reciproc).
-   - *Materiale naturale* (in, cânepă, bumbac, borangic, mătase).
+3. **[Semne & Simboluri (`traditie.html`)](file:///c:/Users/Administrator/.gemini/antigravity/scratch/Sezatoare/traditie.html)**
+   - Cămașa cu altiță în Patrimoniul Mondial UNESCO.
+   - Specificul cămășilor din zona Vâlcea și Oltenia de sub Munte (cromatică, compoziție, altiță, încreț galben, râuri).
+   - Dicționarul detaliat al motivelor ancestrale: Steaua cu 8 colțuri (Călăuza), Rombul și Glia, Pomul Vieții, Calea Ocolită, Coarnele Berbecului, Soarele, Spicul de Grâu, Crucea și Coloana Infinitului.
 
-4. **Dicționarul Semnelor și Simbolurilor Cusute**
-   - Semnificația motivelor ancestrale de pe ie:
-     - *Steaua cu 8 colțuri (Călăuza)*
-     - *Rombul & Glia Roditoare*
-     - *Pomul Vieții (Copacul Cosmic)*
-     - *Calea Ocolită (Apa Vieții)*
-     - *Coarnele Berbecului*
-     - *Soarele & Roza Vânturilor*
+4. **[Ghidul Cusutului (`mestesug.html`)](file:///c:/Users/Administrator/.gemini/antigravity/scratch/Sezatoare/mestesug.html)**
+   - Anatomia cămășii tradiționale (guler/bentiță, altiță, încreț, stanuri, pavă de sub braț, manșetă/fodor).
+   - Ghidul pas cu pas pentru începători (de la spălarea pânzei și croiul rupt pe fir drept, până la cheițe și tiv cu găurele).
+   - **Trusa Bobocului**: lista detaliată cu ace boante, ațe mouline, degetar, foarfecă fină și hârtie milimetrică.
+   - Greșeli frecvente de evitat (noduri pe dos, întinderea excesivă a aței, testarea culorilor).
 
-5. **Meșteșugul Cusutului & Trusa Bobocului**
-   - Cei 4 pași ai făuririi unei ii (Pânză & croi drept, Altiță & încreț, Râuri, Cheițe & tivitură).
-   - Trusa de cusut necesară pentru începători (ace cu vârf bont, foarfecă fină, ațe mouline, hârtie de izvoade).
+5. **[Întâlniri & Ateliere (`evenimente.html`)](file:///c:/Users/Administrator/.gemini/antigravity/scratch/Sezatoare/evenimente.html)**
+   - Calendarul săptămânal al șezătorilor (în fiecare sâmbătă dimineața la Biblioteca Județeană „Antim Ivireanul” din Râmnicu Vâlcea).
+   - Ateliere tematice lunare (încreț, cheițe, descifrare de izvoade la Muzeul Satului Bujoreni).
+   - Sărbători comunitare: Ziua Universală a Iei (24 Iunie) în Parcul Zăvoi și Șezătoarea de Iarnă.
+   - Ghid de participare: participare gratuită, program flexibil, atmosferă deschisă.
 
-6. **Calendarul Întâlnirilor & Atelierelor**
-   - Șezătoarea săptămânală de sâmbătă dimineața (Biblioteca Județeană „Antim Ivireanul”).
-   - Ateliere tematice lunare (încreț și cheițe).
-   - Evenimente sezoniere (Ziua Universală a Iei la Vâlcea).
-
-7. **Povești din Comunitate**
-   - Mărturii ale membrelor despre bucuria cusutului și efectul terapeutic al șezătorii.
-
-8. **Formular de Înscriere & Contact**
-   - Formular prietenos pentru oricine dorește să participe (cu selecție pe nivel de experiență).
-   - Detalii de contact, program și precizarea participării gratuite.
-
-9. **Subsol (Footer)**
-   - Recunoașterea cămășii cu altiță ca patrimoniu UNESCO, legături rapide și buton de revenire sus.
+6. **[Înscriere & Contact (`contact.html`)](file:///c:/Users/Administrator/.gemini/antigravity/scratch/Sezatoare/contact.html)**
+   - Formular complet de înscriere la șezătoare (cu selectarea nivelului de experiență și tipului de proiect dorit).
+   - Date de contact și localizare exactă în Râmnicu Vâlcea.
+   - Secțiune cuprinzătoare de **Întrebări Frecvente (FAQ)** pentru orice începător.
 
 ---
 
-## 🛠️ Tehnologii Utilizate
+## 🎨 Design & Tehnologii
 
-- **HTML5 Semantic**: Structură accesibilă, etichete semantice (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`), atribute ARIA pentru accesibilitate.
-- **CSS3 Modern**:
-  - Arhitectură modulară cu variabile CSS (`:root`).
-  - Paletă cromatică tradițională caldă (teracotă, cărămiziu, in natur, ocru, măsliniu).
-  - Design responsive optimizat (Desktop, Tabletă, Mobil) folosind CSS Grid și Flexbox.
-  - Ornamente și motive grafice geometrice realizate exclusiv prin CSS, fără a depinde de fișiere de imagine externe.
-- **Tipografie**: Google Fonts (`Playfair Display` pentru titluri elegante și `DM Sans` pentru lizibilitate optimă).
-
----
-
-## 🚀 Rulare și Vizualizare Locală
-
-Pentru a deschide și vizualiza platforma în browser:
-- Deschide fișierul `index.html` direct în orice browser web modern (Chrome, Firefox, Edge, Safari).
-- Sau folosește o extensie de tip Live Server / un server HTTP local (ex: `python -m http.server 8000` sau `npx serve`).
+- **HTML5 Semantic**: Etichetare riguroasă, accesibilitate ARIA, ierarhie clară a titlurilor (`h1`-`h4`), formulare semantice cu etichete explicite.
+- **CSS3 Modern (`styles.css`)**:
+  - Arhitectură modulară cu variabile CSS pentru tematică unitară pe toate paginile.
+  - Paletă cromatică caldă inspirată din fibrele naturale: in natur, ocru auriu, teracotă, roșu cărămiziu, brun adânc și măsliniu.
+  - Ornamente geometrice tradiționale românești (romburi, motive dințate, cruciulițe) realizate pur din CSS / simboluri grafice, **fără a depinde de fișiere de imagine externe**.
+  - Responsivitate nativă pentru orice rezoluție: ecran desktop mare, laptop, tabletă și telefon mobil.
+- **Tipografie**: `Playfair Display` (serif elegant pentru titluri) și `DM Sans` (sans-serif clar și lizibil pentru conținut).
 
 ---
 
-## 🤝 Contribuții și Ghid de Dezvoltare
+## 💻 Rulare Locală
 
-Toate contribuțiile respectă instrucțiunile stabilite în `AGENTS.md`:
-- Comunicare și comentarii exclusiv în limba română.
-- Menținerea stilului semantic, curat și fără dependențe inutile.
-- Modificările validate se salvează prin commit pe ramura `main` și se sincronizează pe GitHub.
+Pentru a naviga prin site:
+- Deschide `index.html` în browserul tău favorit (Chrome, Edge, Firefox, Safari).
+- Toate linkurile din meniul superior și din subsol sunt interconectate relativ și funcționează direct pe orice sistem de fișiere local sau server web (GitHub Pages, Apache, Nginx, Live Server).
+
+---
+
+## 📜 Reguli de Dezvoltare
+
+Conform `AGENTS.md`:
+- Comunicare și documentare exclusiv în limba română.
+- Menținerea stilului curat, semantic și accesibil.
+- Modificările se salvează prin commit pe ramura `main` și se sincronizează pe GitHub.

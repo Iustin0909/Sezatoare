@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Șezătoare Râmnicu Vâlcea - Stiluri Principale
+   Șezătoare Râmnicu Vâlcea - Stiluri Principale (Multi-Page Architecture)
    Păstrăm tradiția vie, cusută pe îndelete
    ========================================================================== */
 
@@ -51,6 +51,13 @@ body {
   color: var(--text);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /* Bordură decorativă superioară inspirată din cusătura românească */
@@ -94,15 +101,16 @@ a:focus-visible {
 .site-header {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 16px 20px 40px;
+  padding: 16px 20px 24px;
+  width: 100%;
 }
 
 .topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  background: rgba(255, 253, 248, 0.88);
+  gap: 18px;
+  background: rgba(255, 253, 248, 0.92);
   border: 1px solid var(--border-light);
   box-shadow: var(--shadow-md);
   backdrop-filter: blur(12px);
@@ -131,6 +139,7 @@ a:focus-visible {
   color: #fffaf0;
   font-size: 1.3rem;
   box-shadow: 0 6px 16px rgba(143, 44, 22, 0.25);
+  flex-shrink: 0;
 }
 
 .brand-text {
@@ -158,22 +167,23 @@ a:focus-visible {
 .nav {
   display: flex;
   align-items: center;
-  gap: 22px;
-  font-size: 0.95rem;
+  gap: 20px;
+  font-size: 0.94rem;
   font-weight: 500;
   color: var(--muted);
 }
 
 .nav a {
   position: relative;
-  padding-block: 4px;
+  padding-block: 6px;
+  transition: color 0.2s ease;
 }
 
 .nav a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: 0;
   width: 100%;
   height: 2px;
   background: var(--terracotta);
@@ -183,8 +193,14 @@ a:focus-visible {
 }
 
 .nav a:hover::after,
-.nav a:focus-visible::after {
+.nav a:focus-visible::after,
+.nav a.active::after {
   transform: scaleX(1);
+}
+
+.nav a.active {
+  color: var(--brick);
+  font-weight: 700;
 }
 
 /* Butoane CTA */
@@ -202,6 +218,7 @@ a:focus-visible {
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  white-space: nowrap;
 }
 
 .cta:hover,
@@ -233,7 +250,63 @@ a:focus-visible {
 }
 
 /* ==========================================================================
-   Hero Section
+   Subpage Header Banner & Breadcrumbs
+   ========================================================================== */
+
+.page-hero {
+  background: 
+    linear-gradient(135deg, rgba(255, 250, 243, 0.95), rgba(247, 237, 222, 0.95)),
+    radial-gradient(circle at 80% 20%, rgba(207, 155, 56, 0.15) 0%, transparent 60%);
+  border-bottom: 1px solid var(--border-light);
+  padding: 44px 0 52px;
+  position: relative;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.breadcrumbs a {
+  color: var(--muted);
+}
+
+.breadcrumbs a:hover {
+  color: var(--terracotta);
+}
+
+.breadcrumbs .sep {
+  color: var(--sand);
+}
+
+.breadcrumbs .current {
+  color: var(--brick);
+  font-weight: 700;
+}
+
+.page-hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+  color: var(--deep-brown);
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.page-hero-desc {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 740px;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   Hero Section (Pagina Principală)
    ========================================================================== */
 
 .hero {
@@ -241,7 +314,8 @@ a:focus-visible {
   grid-template-columns: 1.25fr 0.75fr;
   gap: 36px;
   align-items: center;
-  padding-top: 48px;
+  padding-top: 36px;
+  padding-bottom: 40px;
 }
 
 .eyebrow {
@@ -348,7 +422,7 @@ h1 {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 20px;
 }
 
 .panel-header {
@@ -376,7 +450,7 @@ h1 {
 
 .ornament-pattern {
   text-align: center;
-  padding: 24px 10px;
+  padding: 22px 10px;
   background: rgba(244, 236, 223, 0.6);
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-light);
@@ -429,18 +503,23 @@ h1 {
 }
 
 /* ==========================================================================
-   Secțiuni Generale
+   Secțiuni Generale & Componente
    ========================================================================== */
 
 .section {
-  padding: 80px 0;
+  padding: 72px 0;
   position: relative;
 }
 
 .section-intro {
   text-align: center;
   max-width: 720px;
-  margin: 0 auto 52px;
+  margin: 0 auto 48px;
+}
+
+.section-intro.left-align {
+  text-align: left;
+  margin-inline: 0;
 }
 
 .section-eyebrow {
@@ -467,10 +546,12 @@ h1 {
   line-height: 1.7;
 }
 
-/* ==========================================================================
-   Secțiunea: Pilonii Șezătorii
-   ========================================================================== */
+.section-actions {
+  text-align: center;
+  margin-top: 40px;
+}
 
+/* Piloni Șezătoare */
 .section-pillars {
   background-color: var(--panel-tint);
   border-block: 1px solid var(--border-light);
@@ -523,7 +604,7 @@ h1 {
 }
 
 /* ==========================================================================
-   Secțiunea: Semne & Simboluri Cusute
+   Semne & Simboluri Cusute
    ========================================================================== */
 
 .symbols-grid {
@@ -583,8 +664,49 @@ h1 {
   border-top: 1px dashed var(--border-subtle);
 }
 
+/* Card Patrimoniu UNESCO */
+.unesco-feature-box {
+  background: #ffffff;
+  border: 2px solid var(--terracotta);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: center;
+  box-shadow: var(--shadow-md);
+}
+
+.unesco-badge-large {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brick), var(--gold));
+  color: #fff;
+  font-size: 2.2rem;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 8px 20px rgba(143, 44, 22, 0.25);
+  flex-shrink: 0;
+}
+
+.unesco-feature-text h3 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--deep-brown);
+  margin: 0 0 8px;
+}
+
+.unesco-feature-text p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
 /* ==========================================================================
-   Secțiunea: Ghidul Cusutului & Trusa Bobocului
+   Meșteșugul Cusutului & Anatomia Cămășii
    ========================================================================== */
 
 .section-craft {
@@ -718,8 +840,49 @@ h1 {
   line-height: 1.5;
 }
 
+/* Anatomia Cămășii (Carduri detaliate) */
+.anatomy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.anatomy-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.anatomy-tag {
+  align-self: flex-start;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--terracotta);
+  margin-bottom: 8px;
+}
+
+.anatomy-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--deep-brown);
+  margin: 0 0 10px;
+}
+
+.anatomy-card p {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* ==========================================================================
-   Secțiunea: Evenimente & Întâlniri
+   Calendar & Evenimente
    ========================================================================== */
 
 .events-grid {
@@ -822,8 +985,38 @@ h1 {
   border-top: 1px dashed var(--border-subtle);
 }
 
+/* Ghidul Participării la Eveniment */
+.participation-rules-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.rule-box {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.rule-box h4 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--deep-brown);
+  margin: 0 0 8px;
+}
+
+.rule-box p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 /* ==========================================================================
-   Secțiunea: Comunitate & Testimoniale
+   Comunitate & Testimoniale
    ========================================================================== */
 
 .section-community {
@@ -889,7 +1082,7 @@ h1 {
 }
 
 /* ==========================================================================
-   Secțiunea: Contact & Formular de Înscriere
+   Contact & Formular de Înscriere
    ========================================================================== */
 
 .contact-wrapper {
@@ -1044,6 +1237,85 @@ textarea {
   font-size: 1rem;
 }
 
+/* Secțiunea FAQ (Întrebări Frecvente) */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.faq-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 26px 22px;
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-card h4 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--deep-brown);
+  margin: 0 0 10px;
+}
+
+.faq-card p {
+  margin: 0;
+  font-size: 0.94rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ==========================================================================
+   Banner CTA Global (Invitație de participare)
+   ========================================================================== */
+
+.join-banner-section {
+  padding: 60px 0;
+}
+
+.join-banner-box {
+  background: linear-gradient(135deg, var(--deep-brown) 0%, #4a2816 100%);
+  border-radius: var(--radius-lg);
+  padding: 48px 40px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(223, 193, 155, 0.2);
+}
+
+.join-banner-box::before {
+  content: "✦ ✧ ❖ ✧ ✦";
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.04);
+  letter-spacing: 0.2em;
+  pointer-events: none;
+}
+
+.join-banner-copy h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  color: #fffaf0;
+  margin: 0 0 10px;
+}
+
+.join-banner-copy p {
+  color: #e4cbb7;
+  font-size: 1.05rem;
+  margin: 0;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -1052,6 +1324,7 @@ textarea {
   background: var(--deep-brown);
   color: #f7ede2;
   padding-top: 60px;
+  margin-top: auto;
 }
 
 .footer-content {
@@ -1166,6 +1439,10 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .anatomy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .craft-layout {
     grid-template-columns: 1fr;
   }
@@ -1180,6 +1457,20 @@ textarea {
 
   .contact-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .participation-rules-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .join-banner-box {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 
   .footer-content {
@@ -1223,11 +1514,18 @@ textarea {
   .contact-form {
     padding: 24px 18px;
   }
+
+  .unesco-feature-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+    place-items: center;
+  }
 }
 
 @media (max-width: 520px) {
   .symbols-grid,
-  .pillars-grid {
+  .pillars-grid,
+  .anatomy-grid {
     grid-template-columns: 1fr;
   }
 
